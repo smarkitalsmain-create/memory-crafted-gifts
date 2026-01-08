@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+# Magzme
 
-## Project info
+Magzme is a modern digital magazine web application built for long-form reading and curated editorial content.  
+The focus is clarity, flow, and intentional consumption — not infinite scrolling.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## Overview
 
-There are several ways of editing your application.
+Magzme is designed to publish articles that people actually read.
 
-**Use Lovable**
+It avoids feed-driven design, dark patterns, and content noise.  
+The product is opinionated: fewer stories, better written, well presented.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Features
 
-**Use your preferred IDE**
+- Clean, distraction-free reading layout
+- Category-based editorial content
+- Responsive, mobile-first UI
+- Fast load times and smooth navigation
+- Component-driven frontend architecture
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Planned:
+- Author profiles
+- Editorial review flow
+- Issue-based publishing
+- Read and engagement analytics
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
+This project is built using:
 
 - Vite
 - TypeScript
 - React
-- shadcn-ui
+- shadcn/ui
 - Tailwind CSS
 
-## How can I deploy this project?
+The stack is intentionally simple and modern to keep development and maintenance predictable.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## Project Structure
+magzme/
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Page-level components
+│ ├── layouts/ # Layout wrappers
+│ ├── styles/ # Global styles
+│ └── main.tsx # App entry point
+├── public/ # Static assets
+├── index.html
+├── package.json
+└── README.md
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- npm
+
+### Setup
+
+```sh
+# Clone the repository
+git clone <YOUR_GIT_URL>
+
+# Move into project directory
+cd magzme
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
